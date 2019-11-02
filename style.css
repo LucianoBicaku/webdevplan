@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700&display=swap');
+* {
+    box-sizing: border-box;
+  }
+html{
+    margin: 0;
+    padding: 0;
+    border: none;
+    overflow: hidden;
+}
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: none;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    color: white;
+    left: 50%;
+    top: 5%;
+    font-size: 100px;
+    box-shadow: rgba(153, 153, 153, 0.1);
+}
+.text{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    color: white;
+    bottom: 50%;
+    font-size: 50px;
+    left: 50%;
+}
+.schedule{
+    top: 70%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width:50%;
+}
+.bg-color{
+    background-color: rgba(149, 255, 220, 0.322);
+}
+.columns {
+    float: center;
+    width: 100%;
+    padding: 5px;
+}
+  
+.price {
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    cursor: context-menu;
+}
+  
+.price:hover {
+    box-shadow: 10px 20px 40px 0 rgba(0,0,0,0.2)
+}
+  
+.price li {
+    font-family:'PT Serif', serif;
+    border-bottom: 1px solid #eee;
+    color: white;
+    font-size: 18px;
+    padding: 15px 25px;
+    text-align: center;
+}
+  
+a {
+    background-color: rgba(255, 255, 255, 0.849);
+    border: none;
+    color: black;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+a:hover{
+    background-color: rgba(2, 2, 2, 0.472);
+    color: white;
+}
+
+/*----- web responsive ---------*/
+
+@media only screen and (max-width: 900px) {
+    h1{
+        font-size: 80px;
+    }
+    .text{
+        font-size: 40px;
+    }
+    .price li{
+        font-size: 10px;
+    }
+    a{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size: 70px;
+    }
+    .text{
+        font-size: 35px;
+    }
+    .price li{
+        font-size: 8px;
+    }
+    a{
+        font-size: 6px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h1{
+        top: 15%;
+        font-size: 50px;
+    }
+    .text{
+        bottom: 60%;
+        font-size: 20px;
+    }
+    .price li{
+        font-size: 6px;
+    }
+    a{
+        font-size: 5px;
+    }
+}
